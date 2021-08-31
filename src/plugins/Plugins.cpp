@@ -9,6 +9,7 @@
 #include "plugins/TextMessagePlugin.h"
 #include "plugins/RoutingPlugin.h"
 #include "plugins/AdminPlugin.h"
+#include "plugins/LaCourPlugin.h"
 #ifndef NO_ESP32
 #include "plugins/SerialPlugin.h"
 #include "plugins/esp32/EnvironmentalMeasurementPlugin.h"
@@ -25,6 +26,7 @@ void setupPlugins()
     nodeInfoPlugin = new NodeInfoPlugin();
     positionPlugin = new PositionPlugin();
     textMessagePlugin = new TextMessagePlugin();
+    laCourPlugin = new LaCourPlugin();
 
     // Note: if the rest of meshtastic doesn't need to explicitly use your plugin, you do not need to assign the instance
     // to a global variable.

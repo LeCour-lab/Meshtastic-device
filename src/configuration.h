@@ -43,6 +43,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // Configuration
 // -----------------------------------------------------------------------------
 
+// Set the hardware version default to EU868
+#define HW_VERSION_EU865
+
+
 // If we are using the JTAG port for debugging, some pins must be left free for that (and things like GPS have to be disabled)
 // we don't support jtag on the ttgo - access to gpio 12 is a PITA
 #ifdef ARDUINO_HELTEC_WIFI_LORA_32_V2
